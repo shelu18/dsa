@@ -1,0 +1,62 @@
+//declaration of  array!
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //declaration of  array!
+    int number[15];
+    
+    //way of accessing an array!
+    // we will get any random garbage value
+    cout<<"value at 15 index is"<<number[0]<<endl;
+    
+    //if we are accessing undeclared value of an array!it will not give
+    
+    cout<<"value at 20 index is"<<" "<<number[20]<<endl;
+    
+    //initialisation of  array!
+    int second[3] = {5,7,11};
+    
+    //accessing this value
+    
+    cout<<"value at 2nd index is"<<"  "<<second[2]<<endl;
+     
+     
+     //initialising less  values then the size of array!
+    int third[15]={2,7};
+    
+    int i,n = 15;
+    cout<<"the value of third indexing is"<<" ";
+    for(i=0;i<n;i++){
+        
+        cout<<third[i]<<endl;
+    }
+    //initiallising all elements of array by 0
+   int forth[10] ={0};
+    n=10;
+    cout<<"the value of forth array is"<<"";
+    
+    for(int i=0;i<n;i++){
+        
+        cout<<forth[i]<<" ";
+        
+    }
+    
+    //intialising all the value of array with 1 [not possible with this given line]
+     int fifth[10]={1};
+      n=10;
+    cout<<"the value of fifth array is"<<"";
+    
+    for(int i=0;i<n;i++){
+        
+        cout<<fifth[i]<<" ";
+        
+    }
+     
+    
+cout<<endl<<"everything is good"<<endl;
+
+    return 0;
+}
