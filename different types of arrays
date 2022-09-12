@@ -1,0 +1,25 @@
+
+
+
+//DIFFERENT TYPES OF ARRAYS
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+char shelu[5]={'s', 'h' ,'e', 'l' ,'u'};
+
+cout<<shelu[3]<<" ";
+
+//this how we can create other arrays of double
+
+double firstdouble[5];
+float firstfloat[6];
+bool firstbool[3];
+
+    return 0;
+    
+    
+}
