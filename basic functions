@@ -22,3 +22,20 @@ cin>>num2;
 
 
 }
+
+//functions
+#include<iostream>
+using namespace std;
+int add (int num1,int num2){
+                 
+int sum=num1+num2;   //here we  declare our function along with data type and then we will call it by just passing variables
+
+}
+int main(){
+
+
+    int a=2;
+    int b=3;
+    cout<<"the sum is "<<add(a,b)<<endl;
+    return 0;
+}
