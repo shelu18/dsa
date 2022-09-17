@@ -6,7 +6,7 @@ int sum(int a,int b){
 int c = a+b;
 return c;
 }//first we made sum function and take c in return we declare two variables in sum and be then call them by num1 and num2
-
+//int a and inrt b will replace by num1 and num2
 int main ()
 {
 int num1,num2;
