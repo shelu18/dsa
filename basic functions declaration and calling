@@ -5,7 +5,7 @@ int sum(int a,int b){
 
 int c = a+b;
 return c;
-}//first we made sum function and take c in return we declare two variables in sum and be then call them by num1 and num2
+}//first we made sum function and take c in return we declare two parameters in sum and be then call them by num1 and num2
 //int a and inrt b will replace by num1 and num2
 int main ()
 {
@@ -23,7 +23,10 @@ cin>>num2;
 
 }
 
-//functions
+
+
+
+//functions // another example
 #include<iostream>
 using namespace std;
 int add (int num1,int num2){
@@ -39,3 +42,23 @@ int main(){
     cout<<"the sum is "<<add(a,b)<<endl;
     return 0;
 }
+
+
+
+
+// another example 
+
+
+#include<iostream>
+using namespace std;
+void display(void);// first declare the function by return type and parameters 
+
+int main(){
+display(); //call that defined function in main function 
+return 0;
+}
+void display(void)
+{
+
+    cout<<"shelu is great";
+}//then difine that function now whenever you will call that function it will return what u have define under it 
