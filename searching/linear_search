@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int search(int arr[], int n, int x)
+{
+	int i;
+	for (i = 0; i < n; i++)
+		if (arr[i] == x)
+			return i;
+	return -1;
+}
+
+
+int main()
+{
+	int arr[] = { 9, 49, 33, 75, 65 };
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int x = 33;
+
+	int index = search(arr, n, x);
+	if (index == -1)
+		cout << "key value is not available in list";
+	else
+		cout << "key value is available at " << index;
+
+	return 0;
+}
