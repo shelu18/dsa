@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+void swapAlternate(int arr[], int size) {
+
+    for(int i = 0; i<size; i+=2 ) {
+        if(i+1 < size) {
+            swap(arr[i], arr[i+1]);
+        }
+    }
+
+}
+
+int main() {
+    cout<<"enter the size of array";
+ int n;
+ cin>>n;
+ int arrr[100];
+ cout<<"enter the element of an array";
+  for(int i=0;i<n;i++){
+    cin>>arrr[i];
+}
+swapAlternate(arrr,n);
+    for (int i=0;i<n; i++){
+        cout<<arrr[i];
+    }
+      cout << endl;
+       return 0;
+}
