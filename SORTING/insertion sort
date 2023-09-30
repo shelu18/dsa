@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+void insertion_sort(int arr[],int n){
+    for(int i=1;i<n;i++){ //for traversing elements in the array we start with i=1 because considerd i=0 as base or sorted and then arranger rest of all elements in right and left of the base 
+        int initial = arr[i]; //initial variable banaya taki usee hum j wale loop se compare kar sake the shifting 
+        int j=i-1;             //i ko bahar wale scope me declare karna he kiuki hum end me arr[j+1]=initial; declare kar rhe he 
+       for(; j>=0; j--){
+           if(arr[j]>initial)
+             arr[j+1]=arr[j];  //shifting perform hogi agar first wala element bada hua uske next wale se else no
+             else{
+                 break;
+             }
+       }
+       arr[j+1]=initial; //haan or shifting kar ne ke baad me jo bada wala he vo right me chala jaega or chote wale ko hum initial me de
+    }
+}
+int main(){
+    int n;
+    cout<<"enter the size of an array";
+    cin>>n;
+    int arr[n];
+    cout<<"enter"<<" "<<n<<" "<<"elements in the array";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    insertion_sort(arr,n);
+    cout<<"the sorted array is";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+}
